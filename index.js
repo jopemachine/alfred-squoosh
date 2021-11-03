@@ -9,26 +9,27 @@ const imgFilePaths = process.argv[2].split('\t').map((str) => str.trim());
 
 const preprocessOptions = {
   resize: {
-    enabled: process.env.width || process.env.height,
-    width: process.env.width,
-    height: process.env.height,
+    enabled: true,
+    width: Number(process.env.width),
+    height: Number(process.env.height),
   },
 };
 
 (async () => {
   for (const imgFilePath of imgFilePaths) {
-    const imgFile = await fse.readFile(imgFilePath);
-
-    const imgArrayBuf = imagePool.ingestImage(imgFile);
-
-    if (process.env.width || process.env.height) {
-      await imgArrayBuf.decoded;
-      await imgArrayBuf.preprocess(preprocessOptions);
-    }
-
-    const filename = (path.basename(imgFilePath)).split('.')[0];
 
     try {
+      const imgFile = await fse.readFile(imgFilePath);
+
+      const imgArrayBuf = imagePool.ingestImage(imgFile);
+
+      if (process.env.width || process.env.height) {
+        console.log('Image resized.');
+        await imgArrayBuf.decoded;
+        await imgArrayBuf.preprocess(preprocessOptions);
+      }
+
+      const filename = (path.basename(imgFilePath)).split('.')[0];
       await imgArrayBuf.encode({
         [process.env.format]: {
           'quality': Number(process.env.quality)
@@ -44,6 +45,5 @@ const preprocessOptions = {
   }
 
   await imagePool.close();
-
-  console.log('Jobs done');
+  console.log('Jobs done successfully!');
 })();

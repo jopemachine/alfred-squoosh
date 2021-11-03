@@ -26,6 +26,8 @@ Required: `false`
 
 If you want to resize your image, set this value.
 
+When either width or height is specified, the image resized to specified size keeping aspect ratio.
+
 ### height
 
 Type: `Number`
@@ -33,6 +35,8 @@ Type: `Number`
 Required: `false`
 
 If you want to resize your image, set this value.
+
+When either width or height is specified, the image resized to specified size keeping aspect ratio.
 
 ### format
 
@@ -58,10 +62,10 @@ Required: `false`
 
 Default: `process.cwd()`
 
-## License
-
-MIT © [jopemachine](https://github.com/jopemachine)
-
 ## Related links
 
 - [squoosh](https://github.com/GoogleChromeLabs/squoosh)
+
+## License
+
+MIT © [jopemachine](https://github.com/jopemachine)

@@ -30,7 +30,7 @@
   ],
   "dependencies": {
     "@squoosh/lib": "^0.4.0",
-    "alfy": "0.12.1",
+    "alfy": "^0.12.1",
     "fs-extra": "^10.0.0"
   },
   "devDependencies": {
