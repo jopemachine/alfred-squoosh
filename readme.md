@@ -2,6 +2,8 @@
 
 > Convert image through Squoosh in Alfred 4
 
+![demo](./demo.gif)
+
 ## Install
 
 ```
