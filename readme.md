@@ -74,7 +74,7 @@ Default: `process.cwd()`
 
 ## Related links
 
-- [squoosh](https://github.com/GoogleChromeLabs/squoosh)
+- [squoosh](https://github.com/GoogleChromeLabs/squoosh) - Image compression web app that reduces image sizes through numerous formats.
 
 ## License
 
