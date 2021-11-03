@@ -37,13 +37,13 @@ const preprocessOptions = {
       });
 
       const dst = path.resolve(process.env.dest ?? path.dirname(imgFilePath), filename + `.${process.env.format}`);
-      await fse.writeFile(dst, imgArrayBuf.file);
+      await fse.writeFile(dst, (await imgArrayBuf.encodedWith[process.env.format]).binary);
     } catch (err) {
       console.error(err);
       continue;
     }
   }
 
-  await imagePool.close();
   console.log('Jobs done successfully!');
+  await imagePool.close();
 })();

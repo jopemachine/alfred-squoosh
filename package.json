@@ -1,7 +1,7 @@
 {
   "name": "alfred-squoosh",
   "version": "0.0.1",
-  "description": "Convert image through Squoosh in Alfred 4",
+  "description": "Convert images through Squoosh in Alfred 4",
   "license": "MIT",
   "repository": "jopemachine/alfred-squoosh",
   "type": "module",

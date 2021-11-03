@@ -172,11 +172,11 @@
 		<key>format</key>
 		<string>webp</string>
 		<key>height</key>
-		<string>100</string>
+		<string></string>
 		<key>quality</key>
-		<string>90</string>
-		<key>width</key>
 		<string>100</string>
+		<key>width</key>
+		<string></string>
 	</dict>
 	<key>version</key>
 	<string></string>

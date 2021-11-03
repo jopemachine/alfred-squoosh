@@ -1,6 +1,6 @@
 # alfred-squoosh
 
-> Convert image through Squoosh in Alfred 4
+> Convert images through Squoosh in Alfred 4
 
 ![demo](./demo.gif)
 
@@ -14,9 +14,13 @@ $ npm install --global alfred-squoosh
 
 ## Usage
 
-In Alfred, select image files and turn up file window, type `squ`, <kbd>Enter</kbd>.
+In Alfred, select image files and turn up the file window, type `squ`, and <kbd>Enter</kbd>.
 
 ## Config
+
+You can change converter's setting in your config.
+
+![config](./config.png)
 
 ### width
 
@@ -52,7 +56,7 @@ Type: `Number`
 
 Required: `true`
 
-Default: `90`
+Default: `100`
 
 ### dest
 
