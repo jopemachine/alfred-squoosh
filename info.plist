@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>com.jopemachine.alfredsquoosh</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -101,7 +101,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>export alfred_workflow_cache="cache" &amp;&amp; ./run-node index.js '{query}'</string>
+				<string>./node_modules/.bin/run-node index.js '{query}'</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>

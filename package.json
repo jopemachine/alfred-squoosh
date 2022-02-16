@@ -1,6 +1,6 @@
 {
   "name": "alfred-squoosh",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Convert images through Squoosh in Alfred 4",
   "license": "MIT",
   "repository": "jopemachine/alfred-squoosh",
@@ -21,8 +21,7 @@
   "files": [
     "index.js",
     "icon.png",
-    "info.plist",
-    "run-node"
+    "info.plist"
   ],
   "keywords": [
     "alfred",
@@ -30,8 +29,8 @@
     "alfy"
   ],
   "dependencies": {
-    "@squoosh/lib": "^0.4.0",
-    "alfy": "^0.12.1",
+    "@squoosh/lib": "^0.4.1",
+    "alfy": "^0.12.2",
     "fs-extra": "^10.0.0"
   },
   "devDependencies": {
